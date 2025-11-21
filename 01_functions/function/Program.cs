@@ -21,8 +21,14 @@
          internal void Run()
         {
             Console.WriteLine("program gestart");
-            string randomVraag = GetRandomVraag();
-            string antwoord = Console.ReadLine();
+            string antwoord = AskRandomQuestion();
+            string antwoord2 = AskRandomQuestion();
+            string antwoord3 = AskRandomQuestion();
+            string antwoord4 = AskRandomQuestion();
+
+
+            //string randomVraag = GetRandomVraag();
+            //string antwoord = Console.ReadLine();
             //string vraag0 = GetVraag(0);
            /* string mannen = vraag1();
             string views = vraag2();
@@ -86,6 +92,12 @@
         {
             int random = new Random().Next(0, vragen.Length);
             return GetVraag(random);
+        }
+        internal string AskRandomQuestion()
+        {
+            string vraag = GetRandomVraag();
+            string antwoord = Console.ReadLine();
+            return antwoord;
         }
 
     }
