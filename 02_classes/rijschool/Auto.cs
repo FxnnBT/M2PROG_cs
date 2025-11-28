@@ -1,9 +1,9 @@
 namespace rijschool;
 
-internal class Auto
+class Auto
 {
-    internal bool automaat;
-    internal string merk;
-    internal string kenteken;
-    internal int kilometersStand;
+    public bool automaat;
+    public string kenteken;
+    public int kilometersStand;
+    public string merk;
 }

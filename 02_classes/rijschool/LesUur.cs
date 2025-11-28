@@ -1,9 +1,8 @@
 namespace rijschool;
 
-internal class LesUur
+class LesUur
 {
-    internal int tijd;
-    internal Student student;
-    internal RijLeraar rijLeraar;
-    internal Auto auto;
+    public Auto auto;
+    public RijLeraar rijLeraar;
+    public int tijd;
 }

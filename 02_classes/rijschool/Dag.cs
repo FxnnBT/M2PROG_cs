@@ -1,8 +1,6 @@
 namespace rijschool;
 
-
-internal class dag
+class Dag
 {
-    internal DateTime datum;
-    internal LesUur[] lesuren;
+    public LesUur[] lesUren;
 }

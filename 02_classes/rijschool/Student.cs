@@ -1,11 +1,11 @@
 namespace rijschool;
 
-internal class Student
+class Student
 {
-    internal string naam;
-    internal int leeftijd;
-    internal LesPakket lesPakket;
-    internal RijLeraar leraar;
-    internal TheorieTest theorieTest;
-    internal RijTest rijTest;
+    public string naam;
+    public int leeftijd;
+    public int LesPakket;
+    public bool theoritest;
+    public bool rijtest;
+    public LesUur lesUur;
 }
