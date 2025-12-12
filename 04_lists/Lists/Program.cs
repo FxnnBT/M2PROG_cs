@@ -12,7 +12,7 @@ class Program
     }
     void Run()
     {
-        lists();
+        lists2();
     }
 
     internal void lists()
@@ -44,6 +44,19 @@ class Program
         for (int i = 0; i < characterList.Count; i++)
         {
             Console.WriteLine(characterList[i]);
+        }
+    }
+
+    internal void lists2()
+    {
+        List<double> reviews = new List<double>() { 9.99, 4.68, 342.97, 12.2 };
+
+        reviews.Remove(342.97);
+        reviews.RemoveAt(0);
+
+        foreach (double review in reviews)
+        {
+            Console.WriteLine(review);
         }
     }
 }
