@@ -12,7 +12,7 @@ class Program
     }
     void Run()
     {
-        lists2();
+        lists3();
     }
 
     internal void lists()
@@ -57,6 +57,41 @@ class Program
         foreach (double review in reviews)
         {
             Console.WriteLine(review);
+        }
+    }
+
+    internal void lists3()
+    {
+        List<Pickup> pickups = new List<Pickup>();
+
+        for (int i = 0; i < 10; i++)
+        {
+            Pickup pickup = new Pickup()
+            {
+                x = i,
+                y = 0
+            };
+            pickups.Add(pickup);
+        }
+        /*
+        foreach (Pickup pickup in pickups)
+        {
+            if(pickup.x == 4){
+                pickups.Remove(pickup);
+            }
+        }
+        */
+        for (int i = pickups.Count - 1; i >= 0; i--)
+        {
+            if (pickups[i].x == 4)
+            {
+                Console.WriteLine($"removed pickup {pickups[i].x}");
+                pickups.RemoveAt(i);
+            }
+        }
+        foreach (Pickup pickup in pickups)
+        {
+            Console.WriteLine("pickup " + pickup.x + " is still here");
         }
     }
 }
