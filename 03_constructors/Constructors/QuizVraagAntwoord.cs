@@ -1,3 +1,5 @@
+namespace Constructors;
+
 class QuizVraagAntwoord
 {
     internal QuizVraag vraag;
