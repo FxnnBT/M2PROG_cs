@@ -38,10 +38,4 @@ class Program
             Console.WriteLine(formulier.Feedback + " " + formulier.Sterren);
         }
     }
-
-    internal class Formulier
-    {
-        internal int Sterren{get; set;}
-        internal string Feedback{get; set;}
-    }
 }
