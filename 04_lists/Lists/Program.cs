@@ -94,4 +94,20 @@ class Program
             Console.WriteLine("pickup " + pickup.x + " is still here");
         }
     }
+
+    internal void DoDamage(List<Mob> mobs, int damage)
+    {
+        foreach (Mob mob in mobs)
+        {
+            mob.hp -= damage;
+            if (mob.hp <= 0)
+            {
+                mob.IsDead = true;
+            }
+        }
+        List<Mob> newMobs = new List<Mob>();
+
+        Random rand = new Random();
+        
+    }
 }
