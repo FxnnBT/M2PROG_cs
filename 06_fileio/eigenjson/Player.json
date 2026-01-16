@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Jack Cooper",
+        "TitanType": "BT-7274",
+        "Health": 200.0
+    },
+    {
+        "name": "Sarah Briggs",
+        "TitanType": "Vanguard",
+        "Health": 150.0
+    },
+    {
+        "name": "Gates",
+        "TitanType": "Atlas",
+        "Health": 100.0
+    }
+]
