@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup >
-    <None Update="quiz.txt">
+    <None Update="quiz.txt;nos.txt">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
 </ItemGroup>
