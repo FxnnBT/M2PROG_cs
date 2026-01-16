@@ -12,7 +12,7 @@ class Program
         ReadFile();
     }
 
-    private void ReadFile()
+    internal void ReadFile()
     {
         /*Console.WriteLine(Environment.CurrentDirectory);
         string[] lines = File.ReadAllLines("quiz.txt");
